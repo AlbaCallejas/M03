@@ -1,10 +1,13 @@
 #coding:utf-8
 
 from random import randint
+#Se definen las variables
 j1num=randint(2,14)
 j1palo=randint(1,4)
 salir=False
+
 while (salir==False):
+	#Se definen el numero/letra de cada carta del jugador 1
 	if (j1num >= 2 and j1num <= 10):
 		numero=j1num
 
@@ -27,9 +30,12 @@ while (salir==False):
 		palo="Corazones" 
 	print "Jugador 1 tiene:" ,numero, "de" ,palo
 
+	
+	
 	j2num=randint(2,14)
 	j2palo=randint(1,4)
-
+	
+	#Se definen el numero/letra de cada carta del jugador 2
 	if (j2num >= 2 and j2num <= 10):
 		numero=j2num
 
@@ -52,10 +58,12 @@ while (salir==False):
 		palo="Corazones" 
 	print "Jugador 2 tiene:" ,numero, "de" ,palo
 
+	#Ganadores
 	if (j1num > j2num):
 		print "Gana J1"
 	else:
 		print "Gana J2"
+	#Condicion de salida
 	if not ((j1num == j2num) and (j1palo == j2palo)):
 		salir = True
 

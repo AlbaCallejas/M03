@@ -1,8 +1,10 @@
 #coding:UTF8
 #!/bin/bash
 
+#Usuario pone su edad
 edad = input("Introduce tu edad: ")
 
+#Depende de la edad, te muestra un mensaje diferente
 if (edad >=18 and edad <=23) or (edad == 17):
 	print "Puedes pasar a la sesión de jovenes"
 
