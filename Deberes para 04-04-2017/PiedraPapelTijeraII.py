@@ -29,22 +29,22 @@ while (salir==False):
 	
 	print
 	
-	if ( (J1%7==2) or (J1%7==3) or (J1%7==6) and (J2%5==0) or (J2%5==1)):
+	if ( (J1%7==2) or (J1%7==3) or (J1%7==6)) and ((J2%5==0) or (J2%5==1)):
 		print ("J2 WINS!")
 	else:
-		if ( (J1%7==2) or (J1%7==3) or (J1%7==6) and (J2%5==2) or (J2%5==3)):
+		if ( (J1%7==2) or (J1%7==3) or (J1%7==6)) and ((J2%5==2) or (J2%5==3)):
 			print ("J1 WINS!")
 		else:
-			if ( (J1%7==0) or (J1%7==1) and (J2%5==0) or (J2%5==1)):
+			if ( (J1%7==0) or (J1%7==1)) and ((J2%5==0) or (J2%5==1)):
 				print ("J1 WINS!")
 			else:
-				if ( (J1%7==0) or (J1%7==1) and (J2%5==4)):
+				if ( (J1%7==0) or (J1%7==1)) and (J2%5==4):
 					print ("J2 WINS!")
 				else:
-					if ( (J1%7==4) or (J1%7==5) and (J2%5==2) or (J2%5==3)):
+					if ( (J1%7==4) or (J1%7==5)) and ((J2%5==2) or (J2%5==3)):
 						print ("J2 WINS!")
 					else:	
-						if ( (J1%7==4) or (J1%7==5) and (J2%5==4)):
+						if ( (J1%7==4) or (J1%7==5)) and (J2%5==4):
 							print ("J1 WINS!")
 	
 	if ((J1%7==0) or (J1%7==1)) and ((J2%5==2) or (J2%5==3)):
