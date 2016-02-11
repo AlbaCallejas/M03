@@ -39,7 +39,7 @@ while (salir==False):
 		if str(numero1)+palo1 in tabla:
 			salir_j1=True
 		
-	tabla.remove(str(numero1) + palo1)
+	tabla.pop(str(numero1) + palo1)
 		
 	
 #Random jugador 2
@@ -71,7 +71,7 @@ while (salir==False):
 		if (str(numero2)+palo2 in tabla):
 			salir_j2=True
 	
-	tabla.remove(str(numero2) + palo2)
+	tabla.pop(str(numero2) + palo2)
 
 	if (j1num==j2num):
 		print empate
@@ -83,7 +83,7 @@ while (salir==False):
 	
 	raw_input("Dale a intro para continuar: ")
 	
-	if (tabla== [ ]):
+	if (len(tabla)==0):
 		salir=True
 
 
